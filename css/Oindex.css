@@ -1,12 +1,9 @@
-  .bg1 {
-    background-image: url("../assets/imgs/defaultbg.jpg");
-    align-items: center;
+body {
+  background-color: #8581B3;
+}
 
-  }
-
-
-  .init {
-
-
-  }
-  
+#initin {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 5%;
+}
