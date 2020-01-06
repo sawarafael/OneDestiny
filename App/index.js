@@ -9,16 +9,17 @@ function createWindow () {
     height: 768,
     resizable: true,
     fullscreen: false,
-    autoHideMenuBar: true,
+    autoHideMenuBar: false,
     frame: true,
     backgroundColor: '#FFF',
+    icon: __dirname + './assets/imgs/favicon.png',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('login.html')
+  mainWindow.loadFile('./public/pages/signup.html')
 
   mainWindow.on('closed', function () {
   
