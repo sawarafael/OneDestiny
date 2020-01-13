@@ -1,86 +1,105 @@
-.title-bar {
-    -webkit-app-region: drag;
-    margin: 0;
-    display: flex;
-    background-color: grey;
-    width: 100%;
-    height: 50px;
-  }
-  
-  .menu-button-container {
-    background-color: white;
-    border: 0.5px red solid;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .app-name-container {
-    background-color: white;
-    border: 0.5px red solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .window-controls-container {
-    background-color: white;
-    border: 0.5px red solid;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .menu-button {
-    -webkit-app-region: no-drag;
-    background-color: green;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .menu-button:hover {
-    background-color: grey;
-  }
-  
-  .minimize-button {
-    -webkit-app-region: no-drag;
-    background-color: green;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .minimize-button:hover {
-    background-color: grey;
-  }
-  
-  .min-max-button {
-    -webkit-app-region: no-drag;
-    background-color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .min-max-button:hover {
-    background-color: grey;
-  }
-  
-  .close-button {
-    -webkit-app-region: no-drag;
-    background-color: red;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .close-button:hover {
-    background-color: grey;
-  }
+#titlebar {
+  display: block;
+  position: fixed;
+  height: 32px;
+  width: calc(100%); /*Compensate for body 1px border*/
+  background: #1f2250;
+  padding: 4px;
+  color: #FFF;
+}
+
+#titlebar #drag-region {
+  width: 100%;
+  height: 100%;
+  -webkit-app-region: drag;
+  display: grid;
+  grid-template-columns: auto 138px;
+}
+
+#window-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 46px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  font-family: "Segoe MDL2 Assets";
+  font-size: 10px;
+  -webkit-app-region: no-drag;
+}
+
+#window-controls .button {
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  cursor: default;
+}
+#window-controls #min-button {
+  grid-column: 1;
+}
+#window-controls #max-button, #window-controls #restore-button {
+  grid-column: 2;
+}
+#window-controls #close-button {
+  grid-column: 3;
+}
+
+#window-controls .button:hover {
+  background: rgba(255,255,255,0.1);
+}
+#window-controls .button:active {
+  background: rgba(255,255,255,0.2);
+}
+
+#close-button:hover {
+  background: #E81123 !important;
+}
+#close-button:active {
+  background: #f1707a !important;
+  color: #000;
+}
+
+#restore-button {
+  display: none !important;
+}
+
+#window-title {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  overflow-x: hidden;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+}
+
+#window-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}
+
+
+.maximized #titlebar {
+  width: 100%;
+  padding: 0;
+}
+
+.maximized #window-title {
+  margin-left: 12px;
+}
+
+.maximized #restore-button {
+  display: flex !important;
+}
+
+.maximized #max-button {
+  display: none;
+}
+
+
+

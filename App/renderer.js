@@ -1,25 +1,42 @@
-const { remote, ipcRenderer } = require('electron')
+const remote = require('electron').remote;
 
-document.getElementById('menu-button').addEventListener('click', (event) => {
-  ipcRenderer.send('display-app-menu', {
-    x: event.x,
-    y: event.y
-  })
-})
+// When document has loaded, initialise
+document.onreadystatechange = () => {
+    if (document.readyState == "complete") {
+        handleWindowControls();
+    }
+};
 
-document.getElementById('minimize-button').addEventListener('click', () => {
-  remote.getCurrentWindow().minimize()
-})
+function handleWindowControls() {
 
-document.getElementById('min-max-button').addEventListener('click', () => {
-  const currentWindow = remote.getCurrentWindow()
-  if(currentWindow.isMaximized()) {
-    currentWindow.unmaximize()
-  } else {
-    currentWindow.maximize()
-  }
-})
+    let win = remote.getCurrentWindow();
+    // Make minimise/maximise/restore/close buttons work when they are clicked
+    document.getElementById('min-button').addEventListener("click", event => {
+        win.minimize();
+    });
 
-document.getElementById('close-button').addEventListener('click', () => {
-  remote.app.quit()
-})
+    document.getElementById('max-button').addEventListener("click", event => {
+        win.maximize();
+    });
+
+    document.getElementById('restore-button').addEventListener("click", event => {
+        win.unmaximize();
+    });
+
+    document.getElementById('close-button').addEventListener("click", event => {
+        win.close();
+    });
+
+    // Toggle maximise/restore buttons when maximisation/unmaximisation occurs
+    toggleMaxRestoreButtons();
+    win.on('maximize', toggleMaxRestoreButtons);
+    win.on('unmaximize', toggleMaxRestoreButtons);
+
+    function toggleMaxRestoreButtons() {
+        if (win.isMaximized()) {
+            document.body.classList.add('maximized');
+        } else {
+            document.body.classList.remove('maximized');
+        }
+    }
+}
