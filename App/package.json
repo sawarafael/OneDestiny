@@ -2,7 +2,7 @@
   "name": "one-destiny",
   "version": "1.0.0",
   "description": "A Electron Build",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron .",
     "nodemon": "electron ."

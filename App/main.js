@@ -1,9 +1,13 @@
-const {app, BrowserWindow} = require('electron');
+const {
+  app,
+  BrowserWindow,
+  ipcMain,
+  Menu
+} = require('electron');
 const path = require('path');
 let mainWindow;
 
-
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 1024,
@@ -24,26 +28,22 @@ function createWindow () {
   mainWindow.loadFile('./public/views/login.html')
 
   mainWindow.on('closed', function () {
-  
-    mainWindow = null
-  })
-}
-app.on('ready', createWindow)
 
+    mainWindow = null;
+  });
+}
+
+app.on('ready', createWindow);
 
 
 app.on('window-all-closed', function () {
-  if (process.platform !== 'darwin') app.quit()
-})
+  if (process.platform !== 'darwin') app.quit();
+});
 
 
 
 app.on('activate', function () {
- 
-  if (mainWindow === null) createWindow()
-})
 
+  if (mainWindow === null) createWindow();
 
-
-
-
+});
