@@ -25,7 +25,7 @@ function createWindow() {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('./public/views/login.html')
+  mainWindow.loadFile('./public/views/main.html');
 
   mainWindow.on('closed', function () {
 
