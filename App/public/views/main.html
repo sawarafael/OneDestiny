@@ -1,204 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>One Destiny</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>One Destiny</title>
 
-    <link rel="stylesheet" href="./../css/fontsawesome/css/all.css">
-    <link rel="stylesheet" href="./../css/main.css">
-    <link rel="stylesheet" href="./../css/titlebar.css">
+  <link rel="stylesheet" href="./../css/fontsawesome/css/all.css">
+  <link rel="stylesheet" href="./../css/main.css">
+  <link rel="stylesheet" href="./../css/titlebar.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./../contents/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    
+  <!-- Bootstrap Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    let $ = require('jquery');
+  </script>
+  <script>
+    require('popper.js');
+  </script>
+  <script>
+    require('bootstrap');
+  </script>
 
 </head>
+
 <body>
 
 
-    <header id="titlebar">
-        <div id="drag-region">
-            <div id="window-title">
-                <span>One Destiny</span>
-              </div>
-            <div id="window-controls">
-                <div class="button" id="min-button">
-                  <span>&#xE921;</span>
-                </div>
-                <div class="button" id="max-button">
-                  <span>&#xE922;</span>
-                </div>
-                <div class="button" id="restore-button">
-                  <span>&#xE923;</span>
-                </div>
-                <div class="button" id="close-button">
-                  <span>&#xE8BB;</span>
-                </div>
-              </div>
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-title">
+        <span>One Destiny</span>
+      </div>
+      <div id="window-controls">
+        <div class="button" id="min-button">
+          <span>&#xE921;</span>
         </div>
+        <div class="button" id="max-button">
+          <span>&#xE922;</span>
+        </div>
+        <div class="button" id="restore-button">
+          <span>&#xE923;</span>
+        </div>
+        <div class="button" id="close-button">
+          <span>&#xE8BB;</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <br>
+
+
+  <section id="headbar">
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <img src="../../assets/imgs/usernav.png" width="39px" height="39px" alt="">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aventuras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bibliotecas</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Amigos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saiko <br> Lvl 01</a>
+
+            </li>
+            <li class="nav-item">
+              <div>
+                <img class="rounded-circle" src="../../assets/imgs/avatartest.png" width="50px">
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-bell"></i></span></a>
+            </li>
+            <p></p>
+            <li class="nav-item">
+              <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-dollar-sign"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-cog"></i></span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
+  </section>
 
-    <br>
+  <section id="centralbar">
+
+    <div class="sidenav">
+      <a href="#"><img src="./../../assets/imgs/avatartest2.jpg" alt="" class="rounded-circle"
+          style="width: 60px; height: 60px"></a>
+      <a href="#"><img src="./../../assets/imgs/avatartest4.png" alt="" class="rounded-circle"
+          style="width: 60px; height: 60px"></a>
+      <a href="#"><img src="./../../assets/imgs/avatartest3.jpg" alt="" class="rounded-circle"
+          style="width: 60px; height: 60px"></a>
+      <a href="#"><img src="./../../assets/imgs/avatartest5.png" alt="" class="rounded-circle"
+          style="width: 60px; height: 60px"></a>
+      <a href="#"><img src="./../../assets/imgs/avatartest6.png" alt="" class="rounded-circle"
+          style="width: 60px; height: 60px"></a>
+    </div>
 
 
-        <section id="headbar">
-                <header>
-                    <nav class="navbar navbar-expand-md">
-                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">                                    
-                                        <img src="../../assets/imgs/usernav.png" width="39px" height="39px" alt="">                                    
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Aventuras</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bibliotecas</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Amigos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Saiko <br> Lvl 01</a>   
-                                                            
-                                </li>
-                                <li class="nav-item">                                    
-                                    <div>
-                                        <img class="rounded-circle" src="../../assets/imgs/avatartest.png" width="50px">
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-bell"></i></span></a>
-                                </li>
-                                <p></p>                                
-                                <li class="nav-item">
-                                    <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-dollar-sign"></i></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#"><span style="font-size: 38px; color: white;"><i class="fas fa-cog"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
-        </section>        
+    <div class="main">
 
-        <section id="centralbar">  
 
-            <div class="sidenav">
-                <a href="#"><img src="./../../assets/imgs/avatartest2.jpg" alt="" class="rounded-circle" style="width: 60px; height: 60px"></a>
-                <a href="#"><img src="./../../assets/imgs/avatartest4.png" alt="" class="rounded-circle" style="width: 60px; height: 60px"></a>
-                <a href="#"><img src="./../../assets/imgs/avatartest3.jpg" alt="" class="rounded-circle" style="width: 60px; height: 60px"></a>
-                <a href="#"><img src="./../../assets/imgs/avatartest5.png" alt="" class="rounded-circle" style="width: 60px; height: 60px"></a>
-                <a href="#"><img src="./../../assets/imgs/avatartest6.png" alt="" class="rounded-circle" style="width: 60px; height: 60px"></a>
+      <br>
+      <nav class="navbar navbar-expand-lg rounded" id="mainnav">
+        <div class="collapse navbar-collapse" id="textoNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Destaques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recomendações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">De Amigos</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário"
+                aria-describedby="basic-addon1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
               </div>
-              
-              
-              <div class="main">
-                
-
-                <br>
-                <nav class="navbar navbar-expand-lg rounded" id="mainnav">                  
-                    <div class="collapse navbar-collapse" id="textoNavbar">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Destaques</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Novas</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Recomendações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">De Amigos</a>
-                          </li>
-                    </ul>
-                    <form class="form-inline">
-                        <div class="input-group">                         
-                          <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário" aria-describedby="basic-addon1">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </nav>
+            </div>
+          </form>
+        </div>
+      </nav>
 
 
-                  <br>
-                  <div id="carousel">
-                 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          
-                          
-                          <div class="card bg-dark text-white">
-                            <img class="card-img" src="./../../assets/imgs/defaultbg.jpg" alt="Card image">
-                            <div class="card-img-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text">Last updated 3 mins ago</p>
-                            </div>
-                          </div>
+      <br>
+      <div id="carousel">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
 
 
-                        </div>
-                        <div class="carousel-item">
-                          
-
-                        </div>
-                        <div class="carousel-item">
-                          
-                          
-                        
-
-                        </div> 
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Próximo</span>
-                      </a>
-                    </div> 
-
-
-
+              <div class="card bg-dark text-white">
+                <img class="card-img" src="./../../assets/imgs/defaultbg.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
                 </div>
-
-
               </div>
 
 
-              
-        </section>
+            </div>
+            <div class="carousel-item">
 
-       
 
-    <script>
-    
+            </div>
+            <div class="carousel-item">
+
+
+
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <script>
     require('../../renderer.js')
+  </script>
 
-    </script>
-    
 </body>
+
 </html>

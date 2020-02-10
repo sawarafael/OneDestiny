@@ -17,12 +17,16 @@
     "electron": "^7.1.7"
   },
   "dependencies": {
+    "@popperjs/core": "^2.0.5",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
     "custom-electron-titlebar": "^3.2.1",
     "electron-router": "^0.4.4",
     "express": "^4.17.1",
     "install": "^0.13.0",
+    "jquery": "^3.4.1",
     "mysql2": "^2.1.0",
+    "popper.js": "^1.16.1",
     "sequelize": "^5.21.3"
   }
 }
