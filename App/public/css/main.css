@@ -27,7 +27,7 @@ background-image: url('../../assets/imgs/snowBg.png');
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 8px;
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -42,8 +42,8 @@ background-image: url('../../assets/imgs/snowBg.png');
 }
 
 #main {
-  margin-left: 20px; 
-  position: fixed;
+  margin-left: 100px; 
+  padding: 0px 10px;
   max-height: 50%;
 }
 
@@ -59,11 +59,9 @@ background-image: url('../../assets/imgs/snowBg.png');
 
 #mainnav {
 background-color: rgba(0,0,0,0.4 );
-width: 100px;
+width: 900px;;
 border-style: hidden;
 border-radius: 30%;
-margin-top: 30px;
-margin-bottom: 30px;
 ;
 }
 #mainnav a{
