@@ -13,18 +13,19 @@
 #headbar ul li a:hover {
   color: gray;
 }
-body{
-background-image: url('../../assets/imgs/snowBg.png');
+
+body {
+  background-image: url('../../assets/imgs/snowBg.png');
 }
 
 .sidenav {
-  height: 100%; 
-  width: 90px; 
-  position: fixed; 
-  z-index: 1; 
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
   left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
+  background-color: #111;
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
@@ -39,19 +40,25 @@ background-image: url('../../assets/imgs/snowBg.png');
 .sidenav a:hover {
   color: #f1f1f1;
 }
-.sidenav input{
+
+.sidenav input {
   border-radius: 25px;
 }
 
 #main {
-  margin-left: 20px; 
+  margin-left: 20px;
   position: fixed;
   max-height: 50%;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 #button1 {
@@ -60,21 +67,24 @@ background-image: url('../../assets/imgs/snowBg.png');
 
 
 #mainnav {
-background-color: rgba(0,0,0,0.4 );
-width: 100px;
-border-style: hidden;
-border-radius: 30%;
-margin-top: 30px;
-margin-bottom: 30px;
-;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  border-style: hidden;
+  border-radius: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  ;
 }
-#mainnav a{
-color: #fff;
+
+#mainnav a {
+  color: #fff;
 }
-#DropdownAvatar{
+
+#DropdownAvatar {
   background-color: #1f2250;
 
 }
+
 /*
 .img-fluid {
 width: 100%;
