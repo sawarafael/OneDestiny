@@ -1,0 +1,15 @@
+#headbar {
+  background-color: $headbarcolor;
+  z-index: 1;
+  border-bottom: 1px solid $secondarycolor;
+
+  ul li a {
+    color: #ffffff;
+    font-style: cursive;
+    font-size: large;
+
+    a:hover {
+      color: gray;
+    }
+  }
+}
