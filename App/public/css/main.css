@@ -1,58 +1,107 @@
 #headbar {
-    background-color: #1f2250;
-    
+  background-color: #1f2250;
 }
 
+/**/
+
 #headbar ul li a {
-    color: #ffffff;
+  color: #ffffff;
+  font-style: cursive;
+  font-size: large;
 }
 
 #headbar ul li a:hover {
-    color: gray;
+  color: gray;
+}
+
+body {
+  background-image: url('../../assets/imgs/snowBg.png');
 }
 
 .sidenav {
-    height: 100%; 
-    width: 90px; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav input {
+  border-radius: 25px;
+}
+
+#main {
+  margin-left: 20px;
+  position: fixed;
+  max-height: 50%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
 
-  .main {
-    margin-left: 100px; 
-    padding: 0px 10px;
+  .sidenav a {
+    font-size: 18px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  
+}
+
+#button1 {
+  color: #fff
+}
+
 
 #mainnav {
-  background-color: #111;
-  width: 900px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  border-style: hidden;
+  border-radius: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  ;
 }
 
-
-#carousel {
-  background-color: #111;
-  height: 300px;
+#mainnav a {
+  color: #fff;
 }
 
+#DropdownAvatar {
+  background-color: #1f2250;
+
+}
+
+/*
+.img-fluid {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.carousel {
+height: 100% ;
+width: 149%;
+font-size: 14px;
+margin-left: -14px;
+}
+*/
+
+.img-fluid {
+  width: 100em;
+  height: 100em;
+  object-fit: contain;
+}
