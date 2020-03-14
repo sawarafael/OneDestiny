@@ -1,0 +1,67 @@
+
+#headbar {
+    background-color: #1f2250;
+  }
+  
+  #headbar ul li a {
+    color: #ffffff;
+    font-style: cursive;
+    font-size: large;
+  }
+  
+  #headbar ul li a:hover {
+    color: gray;
+  }
+  body{
+  background-image: url('../../assets/imgs/snowBg.png');
+  }
+  
+.sidenav {
+    height: 200%; 
+    width: 20%; 
+    position: fixed;
+    float: right;
+
+    z-index: 1; 
+    right: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav input{
+    border-radius: 25px;
+  }
+  .textimg{
+      float: left;
+  }
+  #atividades {
+    background-color: rgba(0,0,0,0.0 );
+    margin-top: 0px;
+    left: 0%
+  }
+
+  .card-deck{
+      margin-top: 10%;
+      margin-bottom: 5%;
+      height: 70%;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  .card-deck .card {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+  }
