@@ -1,0 +1,11 @@
+.navbar-nav .dropdown-menu {
+  background-color: $secondarycolor;
+
+  .dropdown-item {
+    color: $textcolorlight;
+
+    &:hover {
+      background-color: $primarycolor;
+    }
+  }
+}
