@@ -20,7 +20,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile("./public/views/login.html");
+  mainWindow.loadFile("./public/views/perfil.html");
 
   mainWindow.on("closed", function() {
     mainWindow = null;
