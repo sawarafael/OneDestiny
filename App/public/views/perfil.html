@@ -1,82 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>One Destiny</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>One Destiny</title>
+    <link rel="stylesheet" href="./../sass/main.css" />
+  </head>
 
-  <link rel="stylesheet" href="./../css/fontsawesome/css/all.css">
-  <link rel="stylesheet" href="./../css/perfil.css">
-  <link rel="stylesheet" href="./../css/titlebar.css">
+  <body>
+    <section id="headbar">
+      <nav class="navbar navbar-expand-md">
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <img
+                src="../../assets/imgs/usernav.png"
+                width="45px"
+                height="45px"
+                alt=""
+              />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Aventuras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Bibliotecas</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Amigos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Saiko <br />
+                Lvl 01</a
+              >
+            </li>
+            <li class="nav-item">
+              <div>
+                <div class="dropdown" id="avatarbtn">
+                  <button
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    id="dropdownMenuOffset"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-offset="10,20"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="../../assets/imgs/avatartest.png"
+                      width="50px"
+                    />
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <h6 class="dropdown-header">Username</h6>
+                    <button class="dropdown-item" type="button">Perfil</button>
+                    <button class="dropdown-item" type="button">
+                      Mesas
+                    </button>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" type="button">
+                      Logout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./../contents/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <div class="sidearea">
+      <!--Sidebar-->
+      <div class="col-2" id="centralbar">
+        <div class="sidenav navbar-collapse">
+          <a href="#"
+            ><img
+              src="./../../assets/imgs/avatartest2.jpg"
+              alt=""
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+          /></a>
 
-  <!-- Bootstrap Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script>
-    let $ = require('jquery');
-  </script>
-  <script>
-    require('popper.js');
-  </script>
-  <script>
-    require('bootstrap');
-  </script>
+          <a href="#"
+            ><img
+              src="./../../assets/imgs/avatartest4.png"
+              alt=""
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+          /></a>
 
-</head>
+          <a href="#"
+            ><img
+              src="./../../assets/imgs/avatartest3.jpg"
+              alt=""
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+          /></a>
 
-<body>
-  <header id="titlebar">
-    <div id="drag-region">
-      <div id="window-title">
+          <a href="#"
+            ><img
+              src="./../../assets/imgs/avatartest5.png"
+              alt=""
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+          /></a>
 
+          <a href="#"
+            ><img
+              src="./../../assets/imgs/avatartest6.png"
+              alt=""
+              class="rounded-circle"
+              style="width: 60px; height: 60px"
+          /></a>
+        </div>
       </div>
-      <div id="window-controls">
-        <div class="button" id="min-button">
-          <span>&#xE921;</span>
-        </div>
-        <div class="button" id="max-button">
-          <span>&#xE922;</span>
-        </div>
-        <div class="button" id="restore-button">
-          <span>&#xE923;</span>
-        </div>
-        <div class="button" id="close-button">
-          <span>&#xE8BB;</span>
-        </div>
-      </div>
+      <!--End Sidebar-->
     </div>
-  </header>
-  <br>
-    <div class="hero-image ">
-        <!--Foto de Capa-->
-        <img src="https://i0.wp.com/www.selectgame.com.br/wp-content/uploads/2019/08/League-of-Legends-Zoe-Guardi%C3%A3-Estelar-2019-Splash-Art-Wallpaper-4K-Full-HD.jpg?ssl=1" class="img-fluid" style="width: 100%; height: 100%;">
-        <div>
-            <!--Foto de Perfil-->
-            <div class="hero-text">
-                <a href="#">
-                <img class="rounded-circle " src="../../assets/imgs/avatartest.png" width="200px" alt="" style="border:7px solid white">
-                </a>
-                <p><b>"Hi..."</b></p>
 
+    <div class="navarea">
+      <!--Main Nav-->
+      <nav class="navbar navbar-expand-lg rounded" id="mainnav">
+        <div class="collapse navbar-collapse" id="textoNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  id="button1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Destaques
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Ação</button>
+                  <button class="dropdown-item" type="button">
+                    Another Ação
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  id="button1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Novas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Ação</button>
+                  <button class="dropdown-item" type="button">
+                    Another Ação
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  id="button1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Recomendações
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Ação</button>
+                  <button class="dropdown-item" type="button">
+                    Another Ação
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  id="button1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  RPG de Amigos
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Ação</button>
+                  <button class="dropdown-item" type="button">
+                    Another Ação
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="wrap">
+            <div class="search">
+              <input
+                type="text"
+                class="searchTerm"
+                placeholder="Pesquisar..."
+              />
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
             </div>
-
-            <footer>
-                <p style="float: left; margin-left: 20px; margin-top: 5px;">SuggarCrush</p>
-                <p style="float: right; margin-right: 20px; margin-top: 5px;">Lvl: 99</p>
-            </footer>
-
+          </div>
         </div>
+      </nav>
     </div>
+    <!-- End Nav -->
 
+    <div class="profile-content">
+      <div class="container profile-page">
+        <div class="row align-items-center avatarHeader">
+          <div class="col-sm mx-auto text-center">
+            <div class="profile-header">
+              <img
+                src="./../../assets/imgs/header-img.png"
+                class="img-responsive"
+                alt="header"
+              />
+            </div>
+            <div class="profile-avatar">
+              <img
+                src="./../../assets/imgs/avatar-coolgirl3.jpg"
+                alt="profile pic"
+              />
+            </div>
+            <div class="profile-name">
+              <h3 class="profile-title">Caroline</h3>
+              <h6>Level 6</h6>
+              <span class="badge badge-pill badge-success">Online</span>
+            </div>
+          </div>
+          <div class="description text-center">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              accusamus molestiae eum provident a voluptas inventore.
+              Exercitationem dolore dolorum fuga.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center profileDescription">
+          <div class="col-sm mx-auto text-center">
+            <p>Atividade</p>
+          </div>
+          <div class="col-sm mx-auto text-center">
+            <p>Tags</p>
+          </div>
+          <div class="col-sm mx-auto text-center">
+            <p>Conquistas</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
-        require('../../renderer.js')
-      </script>
-    
-      <script src="./../js/"></script>
-    
-</body>
+      require("../../renderer.js");
+    </script>
+
+    <!-- Bootstrap Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      let $ = require("jquery");
+    </script>
+    <script>
+      require("popper.js");
+    </script>
+    <script>
+      require("bootstrap");
+    </script>
+  </body>
 </html>
