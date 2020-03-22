@@ -3,10 +3,10 @@
 @import "./utilities/mixins";
 
 @import "./layout/mainheadbar";
-@import "./layout/titlebar";
 @import "./layout/carousel";
 @import "./layout/footer";
 @import "./layout/sidebar";
+@import "./layout/navbar";
 
 @import "./components/buttons";
 @import "./components/scrollbar";
@@ -19,6 +19,7 @@
 
 @import "./pages/home";
 @import "./pages/login";
+@import "./pages/perfil";
 
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 @import "./vendors/fontawesome/fontawesome.scss";

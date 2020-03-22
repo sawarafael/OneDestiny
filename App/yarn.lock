@@ -200,10 +200,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-custom-electron-titlebar@^3.2.1:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/custom-electron-titlebar/-/custom-electron-titlebar-3.2.2.tgz#1b1a63b6db7edc0c8413dd46d38aa671bf330157"
-  integrity sha512-xthUHTEh7WPHfZXutlohkdjnHUWMtmdEOVwU0ckwGWaqpXcPcsCclcokDeILnBneZmIgLH/cHijYAUkjhIO7TQ==
+custom-electron-titlebar@^3.2.2-hotfix62:
+  version "3.2.2-hotfix62"
+  resolved "https://registry.yarnpkg.com/custom-electron-titlebar/-/custom-electron-titlebar-3.2.2-hotfix62.tgz#94b908f0f2bf812e4f65447a26b93b88f7a76088"
+  integrity sha512-Kh86xAolkCpqj4AD/H4HcR2pEtxUyIHzMzqwkxqZkSqE7R9tRfN8G3fVpiiNIAJlX8rbN3VwxaoHi1B1sSMn/Q==
 
 debug@2.6.9:
   version "2.6.9"
