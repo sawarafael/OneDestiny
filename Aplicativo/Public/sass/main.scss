@@ -1,0 +1,28 @@
+@import "./utilities/variables";
+@import "./utilities/functions";
+@import "./utilities/mixins";
+
+@import "./layout/mainheadbar";
+@import "./layout/carousel";
+@import "./layout/footer";
+@import "./layout/sidebar";
+@import "./layout/navbar";
+
+@import "./components/buttons";
+@import "./components/scrollbar";
+@import "./components/dropdown";
+
+@import "./base/reset";
+@import "./base/fonts";
+
+@import "./vendors/bootstrap";
+
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/perfil";
+
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+@import "./vendors/fontawesome/fontawesome.scss";
+@import "./vendors/fontawesome/solid.scss";
+@import "./vendors/fontawesome/brands.scss";
+@import "./vendors/fontawesome/regular.scss";
