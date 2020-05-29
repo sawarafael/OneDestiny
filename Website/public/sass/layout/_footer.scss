@@ -1,0 +1,21 @@
+#sticky-footer-login {
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  background-color: $footercolor;
+  color: $textcolorlight;
+}
+
+#sticky-footer {
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+  width: 125%;
+  z-index: 1;
+  background-color: $footercolor;
+  color: $textcolorlight;
+}
