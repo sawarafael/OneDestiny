@@ -1,31 +1,39 @@
-var express = require("express");
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser')
+const express = require('express')
+const app = require('express')();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
-var chalk = require('chalk')
+const port = 3000
+const ip = 'localhost';
 
-var app = express();
+app.use(express.static('public'))
 
-app.use(bodyParser.json());
+// BODY-PARSER PROPS
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
 
-var PORTA = 3030;
+// EXPRESS GETS e POSTS
+//Mostrar page - HOME
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/public/views/login.html');
+  });
+  
+  io.on('connection', (socket) => {
+    socket.emit('news', { hello: 'world' });
+    socket.on('my other event', (data) => {
+      console.log(data);
+    });
+  });
 
-app.get('/user', function(req, res) {
-    var user = [
-        {
-            username: "Saiko",
-            email: "sawarafael@gmail.com",
-            password: "1234"
-        }
-    ];
 
-    res.send(JSON.stringify(user));
+app.listen(port, ip, () => {
 
-})
+    console.log("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+    console.log("■                 Servidor Inicializado!!                    ■")
+    console.log(`■ 1) Para Acessar o Servidor: http://${ip}:${port}           ■`)
+    console.log("■ 2) Para Derrubar o Servidor: ctrl + c                      ■")
+    console.log("■ 3) Para Reiniciar o Servidor: rs                           ■")
+    console.log("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 
-app.listen(PORTA, function(){
-    console.log(chalk.green(` 
-        
-        Servidor rodando na porta ${PORTA}!! 
-        
-         `))
 })

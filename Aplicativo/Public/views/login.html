@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./../sass/main.css" />
     <link rel="stylesheet" href="./../css/fontsawesome/css/all.css" />
+    
   </head>
 
   <body>
@@ -140,19 +141,14 @@
     </footer>
 
     <script>
-      require("../../renderer.js");
+      
+      const socket = io.connect('http://localhost:3000');
+  socket.on('news', (data) => {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+
     </script>
 
-    <!-- Bootstrap Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-      let $ = require("jquery");
-    </script>
-    <script>
-      require("popper.js");
-    </script>
-    <script>
-      require("bootstrap");
-    </script>
   </body>
 </html>
