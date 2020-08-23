@@ -80,7 +80,7 @@ const axios = require('axios');
 
 export default {
     name: 'News',
-    data () {
+    data () { 
         return {
             postOne   : [],
             postTwo   : [],
