@@ -2,10 +2,10 @@
   <nav>
     <v-app-bar flat app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-title class="text-uppercase"
-        ><span class="font-weight-light">One</span>
-        <span>Destiny</span></v-app-title
-      >
+      <v-app-title class="text-uppercase">
+        <span class="font-weight-light">One</span>
+        <span>Destiny</span>
+      </v-app-title>
       <v-spacer></v-spacer>
       <v-btn text>
         <span class="text-uppercase">Login</span>
@@ -13,8 +13,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app class="primary">
-    </v-navigation-drawer>
+    <v-navigation-drawer v-model="drawer" app class="primary"></v-navigation-drawer>
   </nav>
 </template>
 
@@ -22,9 +21,9 @@
 export default {
   data() {
     return {
-      drawer: false,
+      drawer: false
     };
-  },
+  }
 };
 </script>
 

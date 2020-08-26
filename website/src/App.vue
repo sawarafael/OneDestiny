@@ -15,12 +15,12 @@ export default {
   name: "App",
 
   components: {
-    Navbar,
+    Navbar
   },
 
   data: () => ({
-    router,
-  }),
+    router
+  })
 };
 </script>
 
