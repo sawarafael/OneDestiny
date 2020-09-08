@@ -3,9 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
 import titleMixin from "./components/mixins/titleMixin";
+import axios from "axios";
 
 // To change page titles:
 Vue.mixin(titleMixin);
+
+Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
 
