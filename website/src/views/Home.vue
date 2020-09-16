@@ -1,13 +1,11 @@
 <template>
-  <div class="home">
-    <router-link to="AboutUs">About Us</router-link>
-  </div>
+  <v-app> </v-app>
 </template>
 
 <script>
 export default {
   title: "One Destiny",
   name: "Home",
-  components: {}
+  components: {},
 };
 </script>
