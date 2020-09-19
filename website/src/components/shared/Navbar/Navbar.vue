@@ -1,11 +1,19 @@
 <template>
   <nav>
     <v-app-bar app flat>
-      <v-app-bar-nav-icon @click="drawer = !drawer" v-click-outside="onClickOutside"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        @click="drawer = !drawer"
+        class="hidden-md-and-up"
+        v-click-outside="onClickOutside"
+      ></v-app-bar-nav-icon>
       <v-app-title class="text-uppercase text-h6">
-        <span class="font-weight-light">One</span>
-        <span>Destiny</span>
+        <v-btn text block large color="primary" to="/">ONE DESTINY</v-btn>
       </v-app-title>
+      <v-breadcrumbs class="hidden-sm-and-down">
+        <v-breadcrumbs-item to="Blog">Blog</v-breadcrumbs-item>
+        <v-breadcrumbs-item to="News">Noticias</v-breadcrumbs-item>
+        <v-breadcrumbs-item to="AboutUs">Sobre Nós</v-breadcrumbs-item>
+      </v-breadcrumbs>
       <v-spacer></v-spacer>
 
       <v-menu offset-y>
@@ -24,6 +32,15 @@
             <v-list-title class="text-center font-weight-medium">Username</v-list-title>
           </v-list-item>
           <v-divider></v-divider>
+          <v-list-item to="Login">
+            <v-list-item-icon>
+              <v-icon>mdi-login</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title class="text-uppercase font-weight-light">Login</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="Account">
             <v-list-item-icon>
               <v-icon>mdi-account</v-icon>
@@ -48,7 +65,7 @@
       </v-menu>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app class="primary">
+    <v-navigation-drawer v-model="drawer" app class="primary hidden-md-and-up">
       <v-list dark>
         <v-subheader class="font-weight-medium text-uppercase">Navegação</v-subheader>
         <v-list-item-group>
