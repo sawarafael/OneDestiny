@@ -6,13 +6,13 @@
           <div class="section">
             <v-card class="header mb-4 mt-1">
               <v-img
-                src="../assets/img/stock-img2.jpg"
+                src="../assets/img/stock-img3.jpg"
                 height="250"
                 aspect-ratio="2"
                 class="rounded-sm"
               ></v-img>
             </v-card>
-            <p class="text-h2 indigo--text font-weight-bold text-center">Escolha seu Destino!</p>
+            <p class="text-h2 indigo--text font-weight-light text-center">Escolha seu Destino!</p>
             <p class="text-h6 font-weight-light">
               Escolha seu estilo e seja quem você quiser, desafiando impérios
               galácticos, enfrentando monstros ou sendo parte de um épico
@@ -22,14 +22,14 @@
               campanha de RPG.
             </p>
             <v-col class="text-center">
-              <v-btn to="Signin" outlined class="text small" color="indigo">Cadastre-se agora</v-btn>
+              <v-btn to="Signup" outlined class="text small" color="indigo">Cadastre-se agora</v-btn>
             </v-col>
           </div>
           <div class="section">
             <v-card class="header mb-4 mt-1">
               <v-img src="../assets/img/stock-img2.jpg" height="250" aspect-ratio="2"></v-img>
             </v-card>
-            <p class="text-h2 indigo--text font-weight-bold text-center">Inovador e Moderno.</p>
+            <p class="text-h2 indigo--text font-weight-light text-center">Inovador e Moderno.</p>
             <p class="text-h6 font-weight-light">
               O One Destiny irá trazer o clássico RPG de mesa online com um novo
               poder secreto que prioriza a maior qualidade na narrativa e com
@@ -40,9 +40,9 @@
           </div>
           <div class="section">
             <v-card class="header mb-4 mt-1">
-              <v-img src="../assets/img/stock-img2.jpg" height="250" aspect-ratio="2"></v-img>
+              <v-img src="../assets/img/stock-img4.jpg" height="250" aspect-ratio="2"></v-img>
             </v-card>
-            <p class="text-h2 indigo--text font-weight-bold text-center">Fácil de Usar.</p>
+            <p class="text-h2 indigo--text font-weight-light text-center">Fácil de Usar.</p>
             <p class="text-h6 font-weight-light">
               One Destiny trará para a plataforma uma simplicidade ao seu uso
               que será fácil e gratificante de se jogar, sendo você jogador ou
@@ -54,9 +54,9 @@
           </div>
           <div class="section">
             <v-card class="header mb-4 mt-1">
-              <v-img src="../assets/img/stock-img2.jpg" height="250" aspect-ratio="2"></v-img>
+              <v-img src="../assets/img/stock-img5.png" height="250" aspect-ratio="2"></v-img>
             </v-card>
-            <p class="text-h2 indigo--text font-weight-bold text-center">Totalmente Customizável.</p>
+            <p class="text-h2 indigo--text font-weight-light text-center">Totalmente Customizável.</p>
             <p class="text-h6 font-weight-light">
               Escolha como quer jogar e deixe a sua partida do seu jeito e
               estilo que bem gostar. As lendas antigas dizem que a taverna
