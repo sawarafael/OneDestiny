@@ -20,12 +20,12 @@ export default {
 
   components: {
     Navbar,
-    Footer,
+    Footer
   },
 
   data: () => ({
-    router,
-  }),
+    router
+  })
 };
 </script>
 

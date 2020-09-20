@@ -16,6 +16,9 @@ export default new Vuetify({
         info: "#1E2328",
         error: "#A73939",
       },
+      dark: {
+        primary: "#5C6BC0",
+      },
     },
   },
 });

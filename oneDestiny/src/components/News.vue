@@ -1,7 +1,7 @@
 <template id="body">
 
     <div id="container">
-        
+
         <h1 class="headingTitle"> Notícias </h1>
 
         <div class="contentList">
@@ -9,16 +9,16 @@
                 <ul class="newsTab"></ul>
                 <div class="newsContentParts">
                     <h2 class="headingPartOne"> Noticias Especiais </h2>
-                    <ul class="listContentsOne"> 
+                    <ul class="listContentsOne">
                         <li class="content" v-for="titler in postOne" v-bind:key="titler"><a href="./details/">
                         <div><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a></li>
                         <li class="content" v-for="titler in postTwo" v-bind:key="titler"><a href="./details/">
-                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>  
+                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a>
                         </li>
                         <li class="content" v-for="titler in postThree" v-bind:key="titler"><a href="./details/" >
-                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div> 
+                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div>
                         </a>
                         </li>
                     </ul>
@@ -28,11 +28,11 @@
                         <div><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a></li>
                         <li class="content" v-for="titler in postTwo" v-bind:key="titler"><a href="./details/">
-                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>  
+                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a>
                         </li>
                         <li class="content" v-for="titler in postThree" v-bind:key="titler"><a href="./details/" >
-                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div> 
+                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div>
                         </a>
                         </li>
                     </ul>
@@ -42,11 +42,11 @@
                         <div><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a></li>
                         <li class="content" v-for="titler in postTwo" v-bind:key="titler"><a href="./details/">
-                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>  
+                        <div ><p> {{ titler.title }}  <span> ( {{ date }} ) </span></p> </div>
                         </a>
                         </li>
                         <li class="content" v-for="titler in postThree" v-bind:key="titler"><a href="./details/" >
-                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div> 
+                         <div><p> {{ titler.title }} <span> ( {{ date }} ) </span> </p> </div>
                         </a>
                         </li>
                     </ul>
@@ -71,16 +71,16 @@
 
     </div>
 
-    
+
 </template>
 
-<script> 
+<script>
 
 const axios = require('axios');
 
 export default {
     name: 'News',
-    data () { 
+    data () {
         return {
             postOne   : [],
             postTwo   : [],
@@ -93,13 +93,13 @@ export default {
     created () {
         axios.get('https://my-json-server.typicode.com/typicode/demo/posts', { params: { id: 1 } })
             .then(response => { this.postOne      = response.data })
-            .catch(e => { console.log("deu erro") })             
+            .catch(e => { console.log("deu erro") })
         axios.get('https://my-json-server.typicode.com/typicode/demo/posts', { params: { id: 2 } })
             .then(response => { this.postTwo      = response.data })
-            .catch(e => { console.log("deu erro") })              
+            .catch(e => { console.log("deu erro") })
         axios.get('https://my-json-server.typicode.com/typicode/demo/posts', { params: { id: 3 } })
             .then(response => { this.postThree      = response.data })
-            .catch(e => { console.log("deu erro") })  
+            .catch(e => { console.log("deu erro") })
     }
 
 
@@ -147,7 +147,7 @@ a{
 .sideContent {
     float: left;
     width: 520px;
-    
+
 }
 
 .imgSideLeft {
