@@ -5,6 +5,8 @@ import AboutUs from "../views/AboutUs.vue";
 import News from "../views/News.vue";
 import Login from "../views/Login.vue";
 import Signup from "../views/Signup.vue";
+import Blog from "../views/Blog.vue";
+import Account from "../views/Account.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +35,16 @@ const routes = [
     path: "/signup",
     name: "Signup",
     component: Signup,
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
+  },
+  {
+    path: "/account",
+    name: "Account",
+    component: Account,
   },
 ];
 
