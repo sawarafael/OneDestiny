@@ -20,7 +20,14 @@
         <template #activator="{on: menu, attrs}">
           <v-tooltip bottom>
             <template #activator="{on: tooltip}">
-              <v-btn color="primary" fab small dark v-bind="attrs" v-on="{...tooltip, ...menu}">
+              <v-btn
+                color="primary"
+                fab
+                small
+                dark
+                v-bind="attrs"
+                v-on="{ ...tooltip, ...menu }"
+              >
                 <v-icon>mdi-account-circle</v-icon>
               </v-btn>
             </template>
@@ -29,7 +36,9 @@
         </template>
         <v-list v-model="item">
           <v-list-item>
-            <v-list-title class="text-center font-weight-medium">Username</v-list-title>
+            <v-list-title class="text-center font-weight-medium"
+              >Username</v-list-title
+            >
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item to="Login">
@@ -37,7 +46,9 @@
               <v-icon>mdi-login</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="text-uppercase font-weight-light">Login</v-list-item-title>
+              <v-list-item-title class="text-uppercase font-weight-light"
+                >Login</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
 
@@ -46,7 +57,9 @@
               <v-icon>mdi-account</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="text-uppercase font-weight-light">Conta</v-list-item-title>
+              <v-list-item-title class="text-uppercase font-weight-light"
+                >Conta</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="logout">
@@ -54,12 +67,19 @@
               <v-icon>mdi-logout</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="text-uppercase font-weight-light">Sair</v-list-item-title>
+              <v-list-item-title class="text-uppercase font-weight-light"
+                >Sair</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item>
-            <v-switch color="indigo lighten-1" @change="goDarkMode()"></v-switch>
-            <v-list-item-title class="text-uppercase font-weight-light">Dark Mode</v-list-item-title>
+            <v-switch
+              color="indigo lighten-1"
+              @change="goDarkMode()"
+            ></v-switch>
+            <v-list-item-title class="text-uppercase font-weight-light"
+              >Dark Mode</v-list-item-title
+            >
           </v-list-item>
         </v-list>
       </v-menu>
@@ -67,14 +87,18 @@
 
     <v-navigation-drawer v-model="drawer" app class="primary hidden-md-and-up">
       <v-list dark>
-        <v-subheader class="font-weight-medium text-uppercase">Navegação</v-subheader>
+        <v-subheader class="font-weight-medium text-uppercase"
+          >Navegação</v-subheader
+        >
         <v-list-item-group>
           <v-list-item to="/">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="font-weight-light text-uppercase">Home</v-list-item-title>
+              <v-list-item-title class="font-weight-light text-uppercase"
+                >Home</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="Blog">
@@ -82,7 +106,9 @@
               <v-icon>mdi-blogger</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="font-weight-light text-uppercase">Blog</v-list-item-title>
+              <v-list-item-title class="font-weight-light text-uppercase"
+                >Blog</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="News">
@@ -90,7 +116,9 @@
               <v-icon>mdi-newspaper</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="font-weight-light text-uppercase">News</v-list-item-title>
+              <v-list-item-title class="font-weight-light text-uppercase"
+                >News</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="AboutUs">
@@ -98,7 +126,9 @@
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="font-weight-light text-uppercase">About Us</v-list-item-title>
+              <v-list-item-title class="font-weight-light text-uppercase"
+                >About Us</v-list-item-title
+              >
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -112,7 +142,7 @@ export default {
   data() {
     return {
       drawer: false,
-      goDark: false
+      goDark: false,
     };
   },
   methods: {
@@ -121,8 +151,8 @@ export default {
     },
     goDarkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-    }
-  }
+    },
+  },
 };
 </script>
 
