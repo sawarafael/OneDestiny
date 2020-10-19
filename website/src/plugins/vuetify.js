@@ -15,10 +15,13 @@ export default new Vuetify({
         success: "#4DF74D",
         info: "#1E2328",
         error: "#A73939",
+       
       },
       dark: {
         primary: "#5C6BC0",
       },
+      
     },
   },
+  
 });
