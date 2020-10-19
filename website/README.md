@@ -1,4 +1,4 @@
-# website
+# One Destiny
 
 ## Project setup
 ```
